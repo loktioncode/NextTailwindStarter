@@ -36,6 +36,7 @@ export default function Dashboard() {
       // window.sessionStorage.set('openseaData', JSON.stringify(openseaData));
       setNftData(openseaData.data.assets)
     }
+    return getMyNfts;
   }, [])
 
 
