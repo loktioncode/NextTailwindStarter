@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect  } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import LoadingPageContent from '../components/LoadingPageContent'
 import Link from 'next/link'
 import NftList from '../components/NftList'
@@ -21,15 +21,21 @@ export default function Dashboard() {
 
 
   useEffect(() => {
+    // const getMyNfts = async () => {
+    //   const openseaData = await axios.get(`https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=${process.env.NEXT_PUBLIC_NFT_MODULE_ADDRESS}`)
+    //   // alert(openseaData.data.assets)
+    //   // window.sessionStorage.set('openseaData', JSON.stringify(openseaData));
+    //   setNftData(openseaData.data.assets)
+    // }
+
+    // return getMyNfts();
+    // alert("---->",nftData.name);
     const getMyNfts = async () => {
-      const openseaData = await axios.get(`https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=${process.env.NEXT_PUBLIC_NFT_MODULE_ADDRESS}`)
+      const openseaData = await axios.get(`https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x0570408Ba92aC0F8C3a19C0890f9a3829CFf4804`)
       // alert(openseaData.data.assets)
       // window.sessionStorage.set('openseaData', JSON.stringify(openseaData));
       setNftData(openseaData.data.assets)
     }
-
-    return getMyNfts();
-    alert("---->",nftData.name);
   }, [])
 
 
