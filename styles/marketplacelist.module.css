@@ -1,0 +1,10 @@
+.MarketPlaceList{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width:100%;
+    color: #eaeaea;
+    justify-content: center;
+}

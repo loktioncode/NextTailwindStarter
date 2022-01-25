@@ -13,13 +13,7 @@ export default function About() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main>
-             
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        
-          <span className="block">About{' '}</span>
-        </h2>
-
+    
 
           <div className="grid">
             <a href="https://nextjs.org/docs" className="card">
@@ -53,18 +47,9 @@ export default function About() {
           <p>
 
           </p>
-        </main>
+   
 
-        <footer>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-          </a>
-        </footer>
+    
 
 
       </div>

@@ -1,0 +1,16 @@
+.mintNFT{
+    background-image: url("https://source.unsplash.com/random/240x320");
+}
+
+.nftClaims{
+    padding-top: 50px;
+    display: flex;
+    justify-content:center;
+    /* justify-content: space-between; */
+
+}
+
+.auctionWidget{
+    margin: 20px;
+    /* flex-grow: 4;  */
+}

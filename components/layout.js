@@ -1,15 +1,24 @@
-import Head from './nav'
+import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.css'
-// import utilStyles from '../styles/utils.module.css'
+import { useRouter } from 'next/router';
 import Link from 'next/link'
-
-
+import NavBar from "./NavBar";
+import Footer from './Footer'
+import navButtons from "./config/buttons";
 
 const name = 'Elisha Bere'
 export const siteTitle = 'Cryptoowl'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, login }) {
+  const { asPath, pathname } = useRouter();
+
+  const button = <button class="btn btn-square btn-ghost pr-4">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+    </svg>
+  </button>;
+
   return (
     <div >
 
@@ -29,20 +38,13 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <header >
-      </header>
+      {
+        (asPath === "/dashboard") ? <></> : <NavBar navButtons={navButtons} colorSwitch={button} />
+      }
 
-
-      <main className=''>{children}</main>
-
-
-      {!home && (
-        <Link href="/">
-          <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-            ← Back to home
-          </a>
-        </Link>
-      )}
+      <main className='dark-custom'>{children}</main>
+      <Footer />
     </div>
+
   )
 }

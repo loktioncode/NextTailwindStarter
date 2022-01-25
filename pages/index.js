@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Hero from '../components/Hero'
 import ShowcaseCollection from '../components/showcase'
+
 // import NProgress from 'nprogress'
 
 // Router.events.on('routeChangeStart', (url) => {
@@ -18,13 +19,12 @@ import ShowcaseCollection from '../components/showcase'
 export default function Home() {
   return (
     <Layout home>
+    
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <Hero />
       <ShowcaseCollection />
-   
-
     </Layout>
   )
 }

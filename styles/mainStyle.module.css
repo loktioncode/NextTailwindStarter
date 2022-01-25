@@ -1,0 +1,122 @@
+.main{
+    /* height: 40vh; */
+    color: #eaeaea;
+    background-color: #23282e ;
+    padding-top: 20px;
+    position: sticky;
+    top: 0px;
+    overflow-y: hidden;
+    z-index: 1;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-bottom: 20px;
+}
+
+.mainContent{
+    display: flex;
+    padding-bottom: 20px;
+   
+    padding-left: 30px;
+}
+
+.nftHighlight{
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nftContainer{
+    border-radius: 20px; 
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.selectedNft{
+    object-fit: contain;
+    border-radius: 20px; 
+    max-width: min(30vw, 40vh);
+    max-height: 30vw;
+}
+
+.nftDetails{
+    display: flex;
+    flex-direction: column;
+    flex: 0.75;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 76px;
+    font-weight: 800;
+    color: rgb(139, 139, 139);
+}
+.itemNumber{
+    color: rgb(71, 71, 75);
+    font-size: 72px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.owner{
+    display: flex;
+    margin:10px 0;
+    height: 50px;
+}
+
+.owner > div {
+    margin: 0 5px;
+}
+
+.ownerImageContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.ownerImageContainer > img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+
+.ownerDetails{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.ownerNameAndHandle{
+    color: rgb(57, 135, 238);
+}
+
+.ownerLink{
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0 0 0 10px;
+  
+}
+
+.ownerLink > img{
+   height: 100% !important;
+   width: 100% !important;
+
+}
+
+/* .is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: #ffffff !important;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    padding-bottom: 0px;
+} */
