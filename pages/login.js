@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useWeb3, useSwitchNetwork } from "@3rdweb/hooks"
 import axios from 'axios'
+import { LockClosedIcon } from '@heroicons/react/solid'
 
 
 export default function MetaMaskSignIn() {

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Loader from './Loader'
+import Loader from './loader'
 
 function LoadingPageContent(props) {
     return <div>

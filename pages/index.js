@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import Hero from '../components/Hero'
+import Hero from '../components/hero'
 import ShowcaseCollection from '../components/showcase'
 
 // import NProgress from 'nprogress'
